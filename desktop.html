@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>Socket Pairing - Desktop</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="session-id"></div>
+		<div id="qrcode"></div>
+		<div id="debug"></div>
+	</div>	
+
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script> 
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="public/DesktopClient.js"></script> 
+	<script type="text/javascript">
+		$(document).ready(function(){ 
+			var desktopClient = new DesktopClient();
+		});
+	</script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		
+		canvas{
+			 margin: auto;
+		}
+
+		.wrapper{
+			width: 100vw;
+			height: 100vh;
+			text-align: center;
+			padding-top: 100px;
+		}
+
+		#session-id{ 
+			margin-bottom: 100px;
+		}
+
+		#qrcode{
+			
+		}
+	</style>
+</body>
+</html>
