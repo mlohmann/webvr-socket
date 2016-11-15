@@ -31,6 +31,9 @@
   "keywords": [
     "vr"
   ],
+  "engines": {
+    "node": "0.12.7"
+  },
   "author": "Boris Smus",
   "license": "Apache-2.0",
   "bugs": {
@@ -38,6 +41,6 @@
   },
   "homepage": "https://github.com/borismus/webvr-boilerplate#readme",
   "scripts": {
-    "start": "app.js"
+    "start": "node app.js"
   }
 }
